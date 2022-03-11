@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+<!-- Uncomment for Lists case-->
+    <bean id="Question1" class="Capgemini.Spring.Question">
+    <constructor-arg index="0" type="int" value="1"/>
+    <constructor-arg index="1" value="What is inheritance?"/>
+    <constructor-arg index="2">
+            <list>
+                <value>When baseclass inherits the properties of parent it's called inheritance</value>
+            </list>
+    </constructor-arg>
+    </bean>
+
+
+
+<!-- Uncomment for sets case-->
+<!--    <bean id="Question2" class="Capgemini.Spring.Question">-->
+<!--        <constructor-arg index="0" type="int" value="2"/>-->
+<!--        <constructor-arg index="1" value="What is abstract class?"/>-->
+<!--        <constructor-arg index="2">-->
+<!--            <set>-->
+<!--                <value>Abstract class can be inherited but cannot be instantiated</value>-->
+<!--            </set>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+<!-- Comment this Maps part to try others -->
+<!--    <bean id="Question3" class="Capgemini.Spring.Question">-->
+<!--        <constructor-arg index="0" type="int" value="3"/>-->
+<!--        <constructor-arg index="1" value="What is data structure?"/>-->
+<!--        <constructor-arg index="2">-->
+<!--            <map key-type="java.lang.Integer" value-type="java.lang.String">-->
+<!--                <entry key="3" value="It stores multiple types of data in a indexed form"/>-->
+<!--            </map>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+</beans>

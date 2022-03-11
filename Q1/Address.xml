@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="Customer" class="Capgemini.Spring.Customer">
+    <constructor-arg index="0" type="int" value="12"/>
+    <constructor-arg index="1" value="Dev"/>
+    <constructor-arg index="2" type="long" value="9372537382"/>
+    <constructor-arg index="3" ref="Address"/>
+</bean>
+    <bean id="Address" class="Capgemini.Spring.Address">
+        <constructor-arg index="0" value="India"/>
+        <constructor-arg index="1" value="delhi"/>
+        <constructor-arg index="2" value="New Delhi"/>
+        <constructor-arg index="3" type="int" value="110091"/>
+        <constructor-arg index="4" value="3"/>
+    </bean>
+</beans>
